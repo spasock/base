@@ -1,0 +1,35 @@
+{
+  "name": "spasock-base",
+  "version": "1.0.0",
+  "description": "A SPA built using Webpack and Express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline --config build/base.config.js",
+    "build": "rimraf ./dist && NODE_ENV=production webpack --config build/base.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spasock/base.git"
+  },
+  "author": "Frink",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/spasock/base/issues"
+  },
+  "homepage": "https://github.com/spasock/base#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.26.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "babel": "^6.23.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
