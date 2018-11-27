@@ -17,8 +17,8 @@ const {
 
 const banner = `
 file: [file]
-author: rkgrep
-source: https://github.com/rkgrep/spa-tutorial
+author: frink
+source: https://github.com/spasock/base.git
 license: MIT
 `
 

@@ -1,14 +1,13 @@
 import './styles/theme.scss'
+import $ from 'jquery'
+import 'bootstrap'
+import navigo from 'navigo'
 
 if (process.env.NODE_ENV === 'production') {
     console.log('Production ready!')
 }
 
-import $ from 'jquery'
-import 'bootstrap'
-import Navigo from 'navigo'
-
-const router = new Navigo()
+const router = new navigo()
 
 const HomePage = () => System.import('./home').then(module => module.default())
 const AboutPage = () => System.import('./about').then(module => module.default())
@@ -19,6 +18,8 @@ router
     .on('/about', AboutPage)
     .on('/code', CodePage)
     .resolve()
+
+
 
 $(window).on('load', () => {
 
